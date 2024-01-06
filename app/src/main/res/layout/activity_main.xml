@@ -12,13 +12,60 @@
         android:layout_width="297dp"
         android:layout_height="85dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="Enter Weight in Kg"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:background="#46199EE1"
+        android:outlineAmbientShadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <EditText
+        android:id="@+id/enterHeight"
+        android:layout_width="297dp"
+        android:layout_height="85dp"
+        android:background="#46199EE1"
+        android:ems="10"
+        android:hint="Enter Height in cm"
+        android:inputType="numberDecimal"
+        android:outlineAmbientShadowColor="@color/black"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.275" />
+
+    <Button
+        android:id="@+id/bmiCalculate"
+        android:layout_width="135dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#1D71C5"
+        android:text="Check"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517"
+        />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="gravity"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
